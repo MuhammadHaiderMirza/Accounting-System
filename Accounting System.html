@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("ACCOUNTING SYSTEM");
+
+        var eName, eFname, fName, nicNo, att, oAll, eFixSal, eAdvSal, eTroilingAll, eBonusAll, eBonusPM, eTaxPM, totalSal, rec;
+        eName = prompt("Employee Name");
+        eFname = prompt("Employee Full Name");
+        fName = prompt("Father Name");
+        nicNo = prompt("NIC Number");
+        att = prompt("Number of Days Employee Present");
+        oAll = +prompt("Overtime Allowance");
+        eFixSal = +prompt("Employee Fix Salary");
+        eAdvSal = +prompt("Employee Advance Salary");
+        eTroilingAll = +prompt("Employee Troiling Allowance");
+        eBonusAll = +prompt("Employee Bonus Allowance");
+        eBonusPM = +prompt("Employee Bonus Per Month");
+        eTaxPM = prompt("Employee Tax Per Month");
+        
+        totalSal = oAll + eFixSal + eAdvSal + eTroilingAll + eBonusAll + eBonusPM;
+        rec = totalSal - eTaxPM;
+
+        console.log("ACCOUNTING SYSTEM");
+        console.log("");
+        console.log("Module - 1");
+        console.log("");
+        console.log("Employee Name = "+eName);
+        console.log("Employee Full name = "+eFname);
+        console.log("Father Name = "+fName);
+        console.log("Nic No = "+nicNo);
+        console.log("Attendance = "+att);
+        console.log("Overtime Allowance = "+oAll);
+        console.log("");
+        console.log("Moduel - 2");
+        console.log("");
+        console.log("Employee Fix Salary = "+eFixSal);
+        console.log("Employee Advance Salary = "+eAdvSal);
+        console.log("Employee Troiling Allowance = "+eTroilingAll);
+        console.log("Employee Bonus Allowance = "+eBonusAll);
+        console.log("Employee Tax Per Month = "+eTaxPM);
+        console.log("");
+        console.log("Total Salary = "+totalSal);
+        console.log("After Receive = "+rec); 
+        
+    </script>
+</body>
+</html>
